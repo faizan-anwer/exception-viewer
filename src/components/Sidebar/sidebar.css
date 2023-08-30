@@ -1,0 +1,106 @@
+.content-left{
+    width: 15rem;
+    display: block;
+    position: fixed;
+    border-right: 2px solid #ddd;
+    border-top: 1px solid #ddd;
+    height: 100%;
+    overflow-y: auto;
+    margin: 0rem 0 0 0;
+    /* width: 15rem;
+    display: block;
+    position: fixed;
+    border-right: 1px solid #252525;
+    height: 100%;
+    overflow-y: auto; */
+    /* width: 30%;
+    display:table-cell; */
+}
+.content-right{
+    margin: 0rem 0 0 15rem;
+    /* top: 5rem; */
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    /* width: 70%;
+    display: table-cell; */
+}
+.sidebar-container{
+    background-color: #fff;
+    display: flex;
+    margin: 0rem 0 1rem 0;
+}
+.sidebar {
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    height: 105%;
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    margin-top: 0px;
+    /* background-color: #eee;
+    color: #333;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    margin-top: 80px; */
+  }
+
+  .sidebar-title{
+    padding: 1rem 2rem;
+  }
+  
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+    /* margin-top: 1.1rem; */
+  }
+  
+  .sidebar-list li {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    color: #252525;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar-list li:hover, .selected {
+    background-color: #eee;
+    border-left: 4px solid #0051A5;
+  }
+
+  .sidebar-list li:active {
+    background-color: #ddd;
+    border-left: 4px solid #0051A5;
+  }
+
+  .sidebar-list li:focus{
+    border-left: 2px solid #0051A5;
+  }
+
+  .folder-image{
+    width: 16px;
+    height: 16px;
+    /* padding: 4px 0 0 0; */
+    margin-right: 9px;
+    /* margin-top: 16px; */
+    margin-bottom: 0px;
+    /* margin-left: 2px; */
+  }
+  .folder-image::before{
+    /* width: 16px;
+    height: 16px; */
+    padding: 4px 0 0 0;
+    /* margin-right: 9px; */
+    /* margin-top: 16px; */
+    /* margin-bottom: 0px; */
+    /* margin-left: 2px; */
+  }
+  
+  

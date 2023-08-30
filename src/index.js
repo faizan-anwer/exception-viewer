@@ -1,13 +1,34 @@
 import React from 'react';
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Sidebar from './components/Sidebar/sidebar.component';
+import Main from './components/Main/main.component';
+import { RootLayout } from './components/layouts/RootLayout';
+import { Container } from './components/Container/Container';
+import { Logout } from './components/Logout/logout.component';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route exact path="/" element={<RootLayout />}>
+      <Route index path="login" element={<App />} />
+      <Route path="admin" element={<Container />} />
+      <Route path="logout" element={<Logout />} />
+    </Route>
+  )
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

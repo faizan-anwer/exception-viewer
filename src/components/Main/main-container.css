@@ -1,0 +1,88 @@
+.main-container{
+    background-color: #fff;
+    color: #252525;
+    width: 60rem;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    margin-bottom: 6rem;
+}
+.main-title{
+    padding: 1rem 0rem 0 3rem;
+    color: #252525;
+    font-size: 22px;
+    margin-left: 2rem;
+    margin-bottom: 10px;
+
+}
+.main-contianer-list{
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+.main-contianer-list li{
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid #ddd;
+    margin-left: 5rem;
+}
+
+.main-contianer-list li:first-child {
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid #ddd;
+    border-top: 1PX SOLID #ddd;
+}
+.main-contianer-list li:nth-child(even) {
+    cursor: pointer;
+    padding: 1rem 3rem;
+    background-color: #eee;
+}
+
+.main-contianer-list li:hover {
+    background-color: #ddd;
+  }
+
+.table-container, #csvTable {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 5rem;
+  }
+  
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .table th, .table td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .table th {
+    background-color: #eee;
+  }
+  .table tr:first-child() {
+    background-color: #eee;
+  } 
+
+  .table tr:nth-child(even) {
+    background-color: #ddd;
+  }
+
+  .table tr:hover {
+    background-color: #eee;
+    cursor: pointer;
+  }
+
+  .file-image{
+    width: 16px;
+    height: 16px;
+    margin-right: 9px;
+    margin-bottom: 0px;
+    /* padding: 4px 0 0 0; */
+  }
+  
